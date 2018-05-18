@@ -1,2 +1,2 @@
 # SeleksiArkademy18
-D isetiap nomer terdapat readme untuk penjelasan
+Di setiap nomer terdapat readme untuk penjelasan
