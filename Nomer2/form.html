@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+  </head>
+  <style media="screen">
+    main{
+      margin: 10vh auto;
+      color: #fff;
+      width: 400px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      background-color: #2222ff;
+    }
+    label{
+      font-size: 18px;
+    }
+    input{
+      border-radius: 3px;
+      font-size: 20px;
+      border: none;
+      width: 300px;
+      margin: 10px;
+      padding: 10px;
+      transition: .3s;
+    }
+    button:hover, input:focus{
+      border: 1px solid #00ff00;
+    }
+    button{
+      transition: .3s;
+      border: none;
+      padding: 10px;
+      border-radius: 3px;
+      background-color: #fff;
+      cursor: pointer;
+      width: 320px;
+    }
+    input::placeholder{
+      font-style: italic;
+    }
+    .validasi{
+      display: none;
+      background-color: red;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin: 0 auto;
+      text-align: center;
+      color: #fff;
+      width: 400px;
+      padding: 20px;
+    }
+  </style>
+  <body>
+
+    <div class="validasi" id="error">
+      <span></span>
+    </div>
+
+    <main>
+
+      <form name="form" action="" method="post">
+        <label>Username</label><br>
+        <input type="text" pattern="[a-z]{1,50}" placeholder="Username" required><br>
+        <label>Email</label><br>
+        <input type="email" pattern="[a-z].+[a-z]" placeholder="Email" required><br>
+        <label>Phone Number</label><br>
+        <input type="tel" pattern="[++][0-9][^a-z]{10,15}" placeholder="Phone Number" required><br>
+        <button>Submit</button>
+      </form>
+
+    </main>
+
+  </body>
+</html>
