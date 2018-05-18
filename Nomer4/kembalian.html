@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kembalian</title>
+  </head>
+  <style media="screen">
+    main{
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+      width: 700px;
+      font-size: 20px;
+      margin: 10vh auto;
+      border-radius: 5px;
+      background-color: #333;
+    }
+  </style>
+
+  <body>
+
+    <main>
+      <span id="hasil"></span>
+    </main>
+
+    <script type="text/javascript">
+      var stok_kembalian = [500, 1000, 2000, 5000, 10000, 20000, 50000];
+      var total = 0;
+
+      for (var i = 0; i < stok_kembalian.length; i++) {
+        total += stok_kembalian[i];
+      }
+
+      document.getElementById('hasil').innerHTML = 'Total kembalian jika uang yang dimasukkan ke dalam Vending Machine 100.000 adalah =  ' + '<b>' + total + '</b>';
+
+    </script>
+
+  </body>
+</html>
